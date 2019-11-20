@@ -16,8 +16,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "XYQXinGePush"
-  spec.version      = "0.0.1"
-  spec.summary      = "A short description of XYQXinGePush."
+  spec.version      = "3.3.7"
+  spec.summary      = "XYQXinGePush"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,9 +25,10 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
+  XYQXinGePush for CocoaPods
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/XYQXinGePush"
+  spec.homepage     = "https://github.com/xuyuqiang/XYQXinGePush"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,7 +39,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
+  spec.license      = "MIT"
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -52,9 +53,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "xuyuqiang" => "xuyuqiang@ainirobot.com" }
-  # Or just: spec.author    = "xuyuqiang"
-  # spec.authors            = { "xuyuqiang" => "xuyuqiang@ainirobot.com" }
+  spec.author             = { "xyq" => "763827499@qq.com" }
   # spec.social_media_url   = "https://twitter.com/xuyuqiang"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -64,7 +63,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
+  spec.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -79,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/XYQXinGePush.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/xuyuqiang/XYQXinGePush.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
