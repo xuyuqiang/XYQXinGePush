@@ -93,7 +93,7 @@ Pod::Spec.new do |spec|
   # spec.exclude_files = "Classes/Exclude"
 
 
-  spec.public_header_files = "Pod/Classes/**/*.h', 'XYQXinGePush/XinGe/*.h"
+  # spec.public_header_files = "Pod/Classes/**/*.h', 'XYQXinGePush/XinGe/*.h"
   spec.vendored_libraries = 'XYQXinGePush/XinGe/*.a'
 
 
