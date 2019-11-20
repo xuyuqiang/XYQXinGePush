@@ -121,7 +121,7 @@ Pod::Spec.new do |spec|
   spec.frameworks = 'CoreTelephony', 'SystemConfiguration', 'UserNotifications'
 
   # spec.library   = "iconv"
-  spec.libraries = 'libz', 'libsqlite3.0'
+  spec.libraries = 'z', 'sqlite3'
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
