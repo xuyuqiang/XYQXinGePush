@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "XYQXinGePush"
-  spec.version      = "3.3.7"
+  spec.version      = "3.3.71"
   spec.summary      = "XYQXinGePush"
 
   # This description is used to generate tags and improve search results.
@@ -90,9 +90,11 @@ Pod::Spec.new do |spec|
   #
 
   spec.source_files  = "XYQXinGePush/Classes/**/*", "XYQXinGePush/XinGe/*.h"
-  spec.exclude_files = "Classes/Exclude"
+  # spec.exclude_files = "Classes/Exclude"
 
-  # spec.public_header_files = "Classes/**/*.h"
+
+  spec.public_header_files = "Pod/Classes/**/*.h', 'XYQXinGePush/XinGe/*.h"
+  spec.vendored_libraries = 'XYQXinGePush/XinGe/*.a'
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -116,10 +118,10 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-  # spec.frameworks = "SomeFramework", "AnotherFramework"
+  spec.frameworks = 'CoreTelephony', 'SystemConfiguration', 'UserNotifications'
 
   # spec.library   = "iconv"
-  # spec.libraries = "iconv", "xml2"
+  spec.libraries = 'libz', 'libsqlite3.0'
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -131,6 +133,9 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  spec.pod_target_xcconfig = {
+      'OTHER_LDFLAGS' => '$(inherited) -ObjC'
+  }
   # spec.dependency "JSONKit", "~> 1.4"
 
 end
